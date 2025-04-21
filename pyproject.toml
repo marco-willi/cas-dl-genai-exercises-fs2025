@@ -1,0 +1,84 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "dl_genai_lectures"
+version = "0.0.2"
+description = "Deep Learning for Generative AI Lecture Tools"
+authors = [
+    { name = "Marco Willi", email = "marco.willi@fhnw.ch" }
+]
+requires-python = ">= 3.11"
+
+
+dependencies = [
+    # --------- data & analysis -------- #
+    "pandas",
+    "numpy",
+    # --------- visualize -------- #
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    # --------- data & image processing--------- #
+    "Pillow",
+    "opencv-python-headless",
+    # --------- machine learning --------- #
+    "mlxtend",
+    "scikit-learn",
+    # --------- PyTorch and Related --------- #
+    "accelerate",
+    "bitsandbytes",
+    "xformers",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "torchmetrics",
+    "torchshow",
+    "torchviz",
+    "torchinfo",
+    "lightning",
+    "transformers",
+    "diffusers",
+    "datasets",
+    # ----------APIs and Platforms ----------#
+    "huggingface_hub",
+    "openai",
+    "google-genai",
+    "replicate",
+    # --------- Experiment Tracking --------- #
+    "tensorboard",
+    "wandb",
+    # --------- juypter --------- #
+    "jupyter",
+    "ipykernel",
+    "ipywidgets",
+    "xeus-python",
+    # --------- Utilities --------- #
+    "tqdm",
+    "python-dotenv",
+    "pyrootutils",
+    "gdown"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "jupyter-black",
+    "argcomplete",
+    "pytest",
+    "mypy",
+    "pre-commit",
+    "rich",
+    "ruff",
+    "isort"
+]
+
+# extra dependencies which are not central
+extra = [
+    "scikit-image",
+    "timm",
+]
