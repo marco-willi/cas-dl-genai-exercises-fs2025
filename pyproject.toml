@@ -7,7 +7,7 @@ where = ["src"]
 
 [project]
 name = "dl_genai_lectures"
-version = "0.0.2"
+version = "0.0.3"
 description = "Deep Learning for Generative AI Lecture Tools"
 authors = [
     { name = "Marco Willi", email = "marco.willi@fhnw.ch" }
@@ -44,6 +44,7 @@ dependencies = [
     "transformers",
     "diffusers",
     "datasets",
+    "sentencepiece",
     # ----------APIs and Platforms ----------#
     "huggingface_hub",
     "openai",

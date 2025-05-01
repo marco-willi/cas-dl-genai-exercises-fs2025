@@ -2,7 +2,6 @@
 
 This repository is used for the distribution of exercises for the CAS Deep Learning - Module Generative AI  (Part Images).
 
-
 There are several ways to work on the assignments:
 
 - Google Colab (easiest)
@@ -10,6 +9,7 @@ There are several ways to work on the assignments:
 - Docker
 
 Additionally, there are several commercial APIs that can be used during some of the exercises:
+
 - [OpenAI](https://openai.com/api/)
 - [Google Gemini](https://ai.google.dev/)
 - [Replicate](https://replicate.com/)
@@ -18,13 +18,23 @@ Additionally, there are several commercial APIs that can be used during some of 
 
 Use Google Colab by clicking on the links below.
 
-
 ### Exercise 00 - Environment Check
 
 Click on the following badge to open the notebook in Google Colab:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/marco-willi/cas-dl-genai-exercises-fs2025/blob/main/notebooks/00_env_check/env_check.ipynb)
 
+### Exercise 01 - Basic Image Generation
+
+Click on the following badge to open the notebook in Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/marco-willi/cas-dl-genai-exercises-fs2025/blob/main/notebooks/01_basic_image_generation/basic_image_generation.ipynb)
+
+### Exercise 02 - Pre-Trained Models
+
+Click on the following badge to open the notebook in Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/marco-willi/cas-dl-genai-exercises-fs2025/blob/main/notebooks/02_pre_trained_models/pre_trained_models.ipynb)
 
 
 ## Local - pip (not tested)
@@ -37,10 +47,9 @@ pip install .
 
 ### 1. Install Docker on your computer
 
-Depending on your operating system you have to install docker in different ways.  
+Depending on your operating system you have to install docker in different ways.
 
 You'll find detailed instructions here: https://docs.docker.com/get-docker
-
 
 ### 2. Pull the Docker image
 
@@ -53,7 +62,7 @@ docker pull mwilli13/cas-dl-genai-exercises-fs2025:latest
 
 Fork this repository by pressing the fork button on the upper right.
 
-### 4. Clone your fork to your computer. 
+### 4. Clone your fork to your computer.
 
 Clone into your ml directory (`MY_ML_DIR`) using:
 
@@ -82,4 +91,3 @@ docker ps -a
 ### 7. Connect to your container through your browser
 
 Enter `http://localhost:8880/lab` in your browser.
-
